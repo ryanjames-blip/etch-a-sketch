@@ -5,6 +5,12 @@ const gridContainer = document.querySelector('.grid-container');
 
 drawGrid();
 
+const gridElements = document.querySelectorAll('.grid-element');
+gridElements.forEach(gridElement => gridElement.addEventListener('mouseover', colorElement));
+
+//const gridElement = document.querySelector('.grid-element');
+//gridElement.addEventListener('mouseover', colorElement);
+
 function drawGrid() {
     for (let i = 0; i < units * units; i++) {
         const square = document.createElement('div');
@@ -13,3 +19,6 @@ function drawGrid() {
     }
 }
 
+function colorElement() {
+    this.classList.add('grid-element-color');
+}
