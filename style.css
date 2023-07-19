@@ -27,11 +27,16 @@ html, body {
 .grid-element-color {
     background-color: black;
 }
-/*
-.grid-element:hover {
-    background-color: black;
+
+.clear {
+    display: flex;
+    justify-content: center;
 }
-*/
+
+#clear-button {
+    align-self: center;
+    cursor: pointer;
+}
 
 .footer {
     align-self: center;

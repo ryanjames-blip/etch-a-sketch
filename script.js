@@ -8,8 +8,8 @@ drawGrid();
 const gridElements = document.querySelectorAll('.grid-element');
 gridElements.forEach(gridElement => gridElement.addEventListener('mouseover', colorElement));
 
-//const gridElement = document.querySelector('.grid-element');
-//gridElement.addEventListener('mouseover', colorElement);
+const clearButton = document.querySelector('#clear-button');
+clearButton.addEventListener('click', clearGrid);
 
 function drawGrid() {
     for (let i = 0; i < units * units; i++) {
@@ -21,4 +21,10 @@ function drawGrid() {
 
 function colorElement() {
     this.classList.add('grid-element-color');
+}
+
+function clearGrid() {
+    console.log(clearButton);
+    gridElements.forEach(gridElement => 
+        gridElement.classList.remove('grid-element-color'));
 }
