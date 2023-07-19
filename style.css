@@ -1,0 +1,22 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    align-self: center;
+}
+
+.grid-container {
+    border: 2px solid black;
+    align-self: center;
+    margin: 24px 48px;
+    box-sizing: border-box;
+    width: 60%;
+}
+
+.footer {
+    align-self: center;
+    margin-top: auto;
+}
