@@ -24,7 +24,6 @@ function colorElement() {
 }
 
 function clearGrid() {
-    console.log(clearButton);
     gridElements.forEach(gridElement => 
         gridElement.classList.remove('grid-element-color'));
 }
