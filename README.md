@@ -1,0 +1,3 @@
+The Odin Project assignment to build an "Etch-a-Sketch"
+
+Slowly getting better with Javascript...
