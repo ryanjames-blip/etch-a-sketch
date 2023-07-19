@@ -9,11 +9,19 @@ html, body {
 }
 
 .grid-container {
+    display: flex;
+    flex-wrap: wrap;
     border: 2px solid black;
     align-self: center;
     margin: 24px 48px;
     box-sizing: border-box;
     width: 60%;
+}
+
+.grid-element {
+    height: 26px;
+    width: 26px;
+    border: 1px solid black;
 }
 
 .footer {
