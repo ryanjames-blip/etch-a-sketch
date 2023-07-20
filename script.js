@@ -1,6 +1,6 @@
 // draw a 16x16 grid 
-
-const units = 16;
+const DEFAULTUNITS = 16;
+const units = DEFAULTUNITS;
 const gridContainer = document.querySelector('.grid-container');
 
 drawGrid();

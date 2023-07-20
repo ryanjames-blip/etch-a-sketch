@@ -9,20 +9,18 @@ html, body {
 }
 
 .grid-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     border: 2px solid black;
     align-self: center;
     margin: 24px 48px;
     box-sizing: border-box;
-    width: 60%;
-    /*padding-top: 60%;*/
+    width: 35%;
     aspect-ratio: 1/1;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16,1fr);
 }
 
 .grid-element {
-    /*height: 25px;
-    width: 25px; */
     display: inline-block;
     /*border: 1px solid black;*/
     flex: 1;
@@ -46,4 +44,5 @@ html, body {
 .footer {
     align-self: center;
     margin-top: auto;
+    padding-top: 12px;
 }
