@@ -16,22 +16,20 @@ html, body {
     box-sizing: border-box;
     width: 35%;
     aspect-ratio: 1/1;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16,1fr);
+    /*grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16,1fr);*/
 }
 
 .grid-element {
     display: inline-block;
     /*border: 1px solid black;*/
-    flex: 1;
-    aspect-ratio: 1 /1;
 }
 
 .grid-element-color {
     background-color: black;
 }
 
-.clear {
+.buttons {
     display: flex;
     justify-content: center;
 }
